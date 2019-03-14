@@ -43,31 +43,32 @@
 
 # Intro to Vi
 
-- Why vi?
+- What is vi?
+    
+    An editor with huge amount of features. Think of it as a new languague. Its hard at the beggining.
 
-- Its like a new languague. Its hard at the beggining.
-
-- Get in
+- How to get in
     vi file
-- Get out saving. If you didn't modify, its ok.
+
+- Get out by saving. If you didn't modify, its OK also.
     ZZ
-- Get out without saving
+
+- Get out without saving (! means force quit)
     :q!
+
 - If you didn't make any modifications, get out
     :q
 
-- Why Vi? and Vim?
+- Why Vi?
+    - Ubiquitous. Its installed in most Linux/Macos systems. Windows can have it.
+    - Still small
+    - Minimize the distance your fingers travel, so try to maximize speed of typing.
+    - Command mode and edit mode
+        
     -  Multiple clipboards
 
 
 # Lets go to the cool stuff
-
-    ``` 
-    code 
-
-    more code 
-
-    ```
 
     - Undo
         u
@@ -84,7 +85,8 @@
             /test
         - Delete test
             d/test
-
+    - Status about the file
+        g CTRL-g
 
 # Getting serious
 
@@ -111,13 +113,11 @@
     - vi test.gz
 
 
-- Plugins
+# Plugins
     - Vundle
 
 
-
-
-- Configuration file
+# Configuration file
     ~/.vimrc
         - Put
             syntax on
@@ -127,7 +127,8 @@
             set shiftwidth=4
             set expandtab
 
-- Folding:
+# Folding
+
     Put this in your ~/.vimrc
         nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
         vnoremap <Space> zf
