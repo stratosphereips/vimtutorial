@@ -34,6 +34,9 @@
                                       ,,,,,,,,,,,*%(,         ,#%#,,,,,,,,,,,          
 
 
+                    This document: git clone https://github.com/stratosphereips/vimtutorial.git
+
+
 
 # This class in one command
 
@@ -61,12 +64,24 @@
 
 - Why Vi?
     - Ubiquitous. Its installed in most Linux/Macos systems. Windows can have it.
-    - Still small
+    - Still very small
     - Minimize the distance your fingers travel, so try to maximize speed of typing.
     - Command mode and edit mode
+        - When you get in you are in command mode. In this mode they keys do actions instead of appearing on the screen.
+        - To go to edit mode, you should use one of the insert commands, such as:
+            i (to insert on the current position of the 
         
     -  Multiple clipboards
-
+        - Copy a line
+            yy
+        - Paste a line
+            p
+        - Delete a line and put it in the clipboard
+            dd
+        - Copy a word in the clipboard named 'a'.
+            "a
+        - Paste
+            "ap
 
 # Lets go to the cool stuff
 
