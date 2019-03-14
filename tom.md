@@ -85,6 +85,22 @@
 
 # Lets go to the cool stuff
 
+    - Visual mode
+        V (per line)
+        v (per character)
+    - After the visual mode you can act on the selection
+        d (delete all the lines)
+        y (copy all the block)
+        p (paste later
+    - Operation and motions and numbers
+        dl (delete one char to the right)
+        dw (delete the next word)
+        d2w (delete the next 2 words)
+        d$ (delete until the end of line)
+    - Ident
+        >
+    - Unident
+        <
     - Undo
         u
         g-
@@ -103,29 +119,20 @@
     - Status about the file
         g CTRL-g
 
+
 # Getting serious
-
-- Operation and motions
-
-    dl (delete one char to the right)
-    dw (delete the next word)
-    d$ (delete until the end of line)
-
-- Spell corrector (different languages available) botmaster 
-    :set spell on
-    - To correct a word
-        z=
-    - To add a word to the dictionary
-        zg
+    - Spell corrector (different languages available) botmaster 
+        :set spell on
+        - To correct a word
+            z=
+        - To add a word to the dictionary
+            zg
+    - Macros! 
         
-
-
-# Features
-
-- Edit compressed files
-    - echo "sdf" > test
-    - gzip test
-    - vi test.gz
+    - Edit compressed files
+        - echo "sdf" > test
+        - gzip test
+        - vi test.gz
 
 
 # Plugins
